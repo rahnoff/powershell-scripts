@@ -1,6 +1,6 @@
 $FEATUREHT = @{
     Name                   = 'AD-Domain-Services'
-    IncludeManagementtoo;s = $True
+    IncludeManagementTools = $True
     WarningAction          = 'SilentlyContinue'
 }
 Install-WindowsFeature @FEATUREHT
