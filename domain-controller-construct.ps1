@@ -48,7 +48,6 @@ $ADHT = @{
     InstallDNS                    = $False
     Force                         = $True
     NoRebootOnCompletion          = $True
-    WarningAction                 = 'SilentlyContinue'
     Credential                    = $CRED
     SiteName                      = 'Default-First-Site-Name'
     WarningAction                 = 'SilentlyContinue'
