@@ -1,5 +1,5 @@
 # VM -> Install VMware Tools
 Get-Volume
-D:\
+D:
 .\setup.exe
 # Proceed in a GUI
