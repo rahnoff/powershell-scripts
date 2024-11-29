@@ -1,3 +1,4 @@
+# On the first server
 $FEATUREHT = @{
     Name                   = 'AD-Domain-Services'
     IncludeManagementTools = $True
@@ -22,3 +23,7 @@ $ADHT = @{
 }
 Install-ADDSForest @ADHT
 Restart-Computer
+# On the second one
+Resolve-DnsName -Name DC1 -Type A
+Test-NetConnection -ComputerName DC1 -Port 445
+Test-NetConnection -ComputerName DC1 -Port 389
